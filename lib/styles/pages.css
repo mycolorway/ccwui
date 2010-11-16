@@ -1,0 +1,73 @@
+.wrapper{
+	width:960px;
+	margin: 40px auto;
+}
+
+/*----------- datetime -----------*/
+.timepicker {
+    padding: 0 0 0.4em;
+}
+
+.timepicker select {
+    width: 60px;
+}
+
+.form form .form-field .field-input input.input-text {
+    width: 120px;
+}
+
+.form-field{
+	float:left;
+	font-size:12px;
+	margin-top:10px;
+}
+
+/*------- Dialog --------*/
+
+.ui-dialog .dialog-buttons {
+    margin: 10px 0 0 0;
+    padding: 8px 0 0 0;
+    border-top: 1px solid #cccccc;
+}
+
+.ui-dialog .dialog-buttons .dialog-buttons-inner {
+    height: 25px;
+    line-height: 12px;
+}
+
+.ui-dialog .dialog-buttons .dialog-link,
+.ui-dialog .dialog-buttons .dialog-text {
+    display: block;
+    padding: 6px 0;
+    margin: 0 10px 0 0;
+    _display: inline;
+}
+
+.ui-dialog .dialog-buttons .left {
+    float: left;
+}
+
+.ui-dialog .dialog-buttons .right {
+    float: right;
+}
+
+/*-------- jquery override ----------*/ 
+
+.ui-corner-tl { -moz-border-radius-topleft: 0; -webkit-border-top-left-radius: 0; border-top-left-radius: 0; }
+.ui-corner-tr { -moz-border-radius-topright: 0; -webkit-border-top-right-radius: 0; border-top-right-radius: 0; }
+.ui-corner-bl { -moz-border-radius-bottomleft: 0; -webkit-border-bottom-left-radius: 0; border-bottom-left-radius: 0; }
+.ui-corner-br { -moz-border-radius-bottomright: 0; -webkit-border-bottom-right-radius: 0; border-bottom-right-radius: 0; }
+.ui-corner-top { -moz-border-radius-topleft: 0; -webkit-border-top-left-radius: 0; border-top-left-radius: 0; -moz-border-radius-topright: 0; -webkit-border-top-right-radius: 0; border-top-right-radius: 0; }
+.ui-corner-bottom { -moz-border-radius-bottomleft: 0; -webkit-border-bottom-left-radius: 0; border-bottom-left-radius: 0; -moz-border-radius-bottomright: 0; -webkit-border-bottom-right-radius: 0; border-bottom-right-radius: 0; }
+.ui-corner-right {  -moz-border-radius-topright: 0; -webkit-border-top-right-radius: 0; border-top-right-radius: 0; -moz-border-radius-bottomright: 0; -webkit-border-bottom-right-radius: 0; border-bottom-right-radius: 0; }
+.ui-corner-left { -moz-border-radius-topleft: 0; -webkit-border-top-left-radius: 0; border-top-left-radius: 0; -moz-border-radius-bottomleft: 0; -webkit-border-bottom-left-radius: 0; border-bottom-left-radius: 0; }
+.ui-corner-all { -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
+
+.ui-widget {
+    font-size: 12px;
+}
+
+.ui-widget-content a {
+    color: #3399cc;
+}
+
