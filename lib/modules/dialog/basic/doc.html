@@ -1,0 +1,35 @@
+<h3>说明文档</h3>
+<p>Dialog 是基于jQuery UI 开发的一个插件，您可以定制各种主题的弹出窗口。</p>
+<p>
+	<ul>
+		<li>1.能够自适应内容，接受固定宽高的参数。</li>
+		<li>2.除了 jQuery UI 内置的皮肤，也可以自定义各种主题。</li>
+		<li>3.兼容主流浏览器。</li>
+	</ul>
+</p>
+<p>
+<strong>使用方法与参数说明：</strong>
+<br />options 是可选的参数,默认值为：
+<code>
+<br />$.dialog({	
+<br />title: "",    			//标题
+<br />content: null,			//内容
+<br />width: 300,				//容器宽
+<br />height: "auto",			//容器高
+<br />draggable: false,			//是否拖动
+<br />resizable: false,			//是否拖动改变容器大小
+<br />modal: true,				//是否有遮罩
+<br />minHeight: 100,			//容器最小高度
+<br />minWidth: "auto",			//容器最小宽度
+<br />buttons: []				//按钮  buttons[{
+									text:"按钮文字"，
+									type:"按钮类型（可选参数：link,text,button），默认为 button"，
+									align:"对齐方式"，
+									handler:function(){自定义函数}
+									}]
+<br />})
+<br /><em>关闭窗口函数</em>									
+<br />$.dialog("colse");  	
+</code>
+</p>
+<p>更多细节请查看 Demo</p>

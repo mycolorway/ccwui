@@ -1,0 +1,50 @@
+<h3>说明文档</h3>
+<p>基于 jQuery 开发的表单验证组件。配合jquery.tips.js组件，提供更友好的交互。</p>
+<p>
+<strong>使用方法与参数说明：</strong>
+<code>
+	<br />$( "selector" ).validate({
+        <br />"txt-required": {	//需要验证字段的id
+            <br />required: true		//该字段不能为空
+        <br />},
+        <br />"txt-max-length": {		
+            <br />maxLength: 5		//该字段最多字符数
+        <br />},
+        <br />"txt-digits-max": {		
+            <br />digits: true,		//该字段只能填写数字
+            <br />max: 100		//数字最大值
+        <br />},
+        <br />"txt-email": {		
+            <br />email: true		//Email验证
+        <br />},
+        <br />"txt-url": {		
+            <br />url: true		//URL验证
+        <br />},
+        <br />"txt-password": {		
+            <br />required: true,		
+            <br />minLength: 6	//该字段最少6位
+        <br />},
+        <br />"txt-confirm-password": {		
+            <br />equalTo: "txt-password",	//密码验证，两次输入密码是否一致
+            <br />msg: "两次输入的密码不一致"		//自定义错误提示信息
+        <br />},
+        <br />"radio-status": {		
+            <br />required: true,		//单选按钮验证
+            <br />position: "top"		//错误信息显示位置，默认 right。只有引入jquery.tips.js有效。
+        <br />},
+        <br />"cb-group": {		
+            <br />required: true,		//多选按钮验证
+            <br />position: "top"
+        <br />}
+		<br />})；
+</code>
+</p>
+<p>
+<strong>表单提交验证和重置的实现:</strong>
+</code>
+	<br />$( ".form" ).validate( "validate" );		//传递字符串 "validate" 验证所有字段是否满足上面验证条件
+	<br />$( ".form" ).validate( "reset" )		//传递字符串 "reset" 情况所有错误信息提示。
+		<br />.find( "input:text, input:password" ).val( "" ); //将表单值重置
+</code>
+</p>
+<p>更多细节请查看 Demo 及源代码。</p>
