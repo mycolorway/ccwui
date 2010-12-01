@@ -4,43 +4,44 @@
 </p>
 <p>
 <strong>使用方法与参数说明：</strong>
-<code>
-	<br />$( "selector" ).treegrid({
-    <br />url: "", //远程数据接口，数据格式见后面的说明
-    <br />params: {}, //请求远程数据的参数
-    <br />data: null, //本地数据，与远程数据接口二选一
-    <br />columns: [], //表格的列配置，配置参数见后面的说明
-    <br />border: "", //表格是否带边框，可接受的值：true/false或者css字符串
-    <br />stripe: true, //数据行的斑马线效果
-    <br />rowover: false, //数据行的hover效果
-    <br />selectable: false, //数据行是否可选择
-    <br />holderSize: 16 //树节点收起icon的大小
-	<br />});
-</code>
+<pre class="brush:js">
+	$( "selector" ).treegrid({
+    url: "", 			//远程数据接口，数据格式见后面的说明
+    params: {},	 		//请求远程数据的参数
+    data: null, 		//本地数据，与远程数据接口二选一
+    columns: [],	 	//表格的列配置，配置参数见后面的说明
+    border: "", 		//表格是否带边框，可接受的值：true/false或者css字符串
+    stripe: true,	 	//数据行的斑马线效果
+    rowover: false, 	//数据行的hover效果
+    selectable: false, 	//数据行是否可选择
+    holderSize: 16 		//树节点收起icon的大小
+	});
+</pre>
 </p>
 <p>
 <strong>表格列配置对象的参数说明：</strong>
-<code>
-	<br >{
-    <br />width: 0, //列的宽度
-    <br />align: "left", //文本的水平位置
-    <br />dataIndex: "", //对应的数据字段名
-    <br />header: "", //列表头的文本
-    <br />headerAlign: "", //列表头文本的位置，默认与header的值相同
-    <br />renderer: null //自定义单元格的渲染方式，接受一个function(val, rowIndex, colIndex, row, config)，返回HTML字符串/HTML元素/jQuery对象/数组
-<br />}
-</code>
+<pre class="brush:js">
+{
+    width: 0, 			//列的宽度
+    align: "left", 		//文本的水平位置
+    dataIndex: "", 		//对应的数据字段名
+    header: "", 		//列表头的文本
+    headerAlign: "",	//列表头文本的位置，默认与header的值相同
+    renderer: null		//自定义单元格的渲染方式，接受一个function(val, rowIndex, colIndex, row, config)，返回HTML字符串/HTML元素/jQuery对象/数组
+}
+</pre>
 </p>
 <p>
-<code>
 	<strong>Grid组件支持一些自定义事件，说明如下：</strong>
-
-    <br />load(e, grid): grid加载完成之后触发
-    <br />rowselect(e, rowObj): 数据行被选中时触发，参数rowObj包含3个属性index(int), select(boolean), data(object)
-    <br />rowclick(e, rowObj): 数据行被点击时触发，参数rowObj包含2个属性index(int), data(object)
-    <br />rowdblclick(e, rowObj): 数据行被双击时触发，参数rowObj包含2个属性index(int), data(object)
-    <br />sort(e, sortObj): 排序之后之后触发，参数sortObj包含3个属性status(string), th(object), config(object)
-</code>
-Grid的数据格式请参考：data.json
+<pre class="brush:js">
+    load(e, grid): 			//grid加载完成之后触发
+    rowselect(e, rowObj): 	//数据行被选中时触发，参数rowObj包含3个属性index(int), select(boolean), data(object)
+    rowclick(e, rowObj): 	//数据行被点击时触发，参数rowObj包含2个属性index(int), data(object)
+    rowdblclick(e, rowObj): //数据行被双击时触发，参数rowObj包含2个属性index(int), data(object)
+    sort(e, sortObj): 		//排序之后之后触发，参数sortObj包含3个属性status(string), th(object), config(object)
+</pre>
+</p>
+<p>
+Tree Grid的数据格式请参考：<a href='/uiku/lib/modules/grid/basic/data.json' target='_blank'>data.json</a>
 </p>
 <p>更多细节请查看 Demo。</p>
