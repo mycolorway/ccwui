@@ -79,7 +79,7 @@
 
 .digit ul{
 	float:left;
-	+width:390px;
+	width:390px;
 }
 
 .digit ul li{
