@@ -272,7 +272,12 @@
     border-top: none;
 }
 
-
+	.data-table .sort-desc{
+		background:#f1f1f1 url(../images/sort-arr.png) 90% 10px no-repeat;
+	}
+	.data-table .sort-asc{
+		background:#f1f1f1 url(../images/sort-arr.png) 90% -20px no-repeat;
+	}
 /***** table border *****/
 
 .data-table-border {

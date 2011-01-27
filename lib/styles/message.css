@@ -1,0 +1,76 @@
+.green-font{
+	color:#006600;
+}
+.red-font{
+	color:#ff0000;
+	font-weight:600;
+}
+.scarlet-font{
+	color:#cc0000;
+}
+.gray-font{
+	color:#999;
+}
+.btn{
+	width:70px;margin:10px 20px 0 0;
+}
+/*--- 关注模块 ---*/
+.mod-gz{}
+	.mod-gz h3{
+		float:left;width:70px;
+	}
+	.gz-datetime a,
+	.gz-datetime span{
+		display:block;float:left;min-width:9px;padding:0 2px;
+		font-size:13px;color:#999;
+	}
+	.gz-datetime a:hover{
+		text-decoration:none;
+		cursor:default;
+	}
+	.gz-datetime a.hv-msg{color:#3399cc;}
+	.gz-datetime a.selected,
+	.gz-datetime a.hv-msg:hover{
+		color:#000;font-weight:bold;
+		cursor:pointer;
+	}
+	.gz-datetime span{color:#666;}
+	.gz-datetime a.prev{
+		margin-right:5px;
+		background:url(../images/arr-btn.png) 0 -38px no-repeat;
+		text-indent:-999em;
+	}
+	.gz-datetime a.prev:hover{
+		background-position:0 -58px;
+		cursor:pointer;
+	}
+	.gz-datetime a.next{
+		margin:0 10px 0 5px;
+		background:url(../images/arr-btn.png) 0px 2px no-repeat;
+		text-indent:-999em;
+	}
+	.gz-datetime a.next:hover{
+		background-position:0 -18px;
+		cursor:pointer;
+	}
+	.gz-datetime a.disable:hover{
+		background-position:0 2px;
+		cursor:default;
+	}
+	.gz-msg{
+		clear:both;padding-top:5px;
+	}
+	.gz-msg li{
+		overflow:hidden;margin-top:5px;width:718px;
+		background:#e9eef6;-moz-border-radius:5px;border-radius:5px;
+	}
+	.gz-msg .left{
+		float:left;width:50px;padding:10px;
+	}
+		.gz-msg .left span{
+			display:block;
+			color:#666;font-size:11px;
+		}
+	.gz-msg .right{
+		float:left;width:625px;padding:7px 10px 10px;
+	}

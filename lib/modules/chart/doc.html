@@ -1,0 +1,23 @@
+<h3>说明文档</h3>
+<p>
+基于 jquery 开发的仪表盘组件，仅对支持 canvas 的浏览器有效 。
+</p>
+<p>
+<strong>使用方法与参数说明：</strong>
+<pre class="brush:js">
+	$( "selector" ).chartdata ({
+			url: "",	//远程数据接口，数据格式见后面的说明
+			notesURL: null,		//注释信息远程数据接口，数据格式见后面的说明
+			chartId: "chart",	//组件 id
+			params: {},			//请求远程数据的参数
+			path: "",			//swf 文件夹路径
+			height: "200",		//flash 高
+			width: "800",		//flash 宽
+			creator:"admin"		//注释信息发布者
+	)};
+</pre>
+</p>
+<p>
+chartdata 的数据格式请参考：<a href='/TS-UI/lib/modules/chart/chart1.json' target='_blank'>chart1.json</a>,<a href='/TS-UI/lib/modules/chart/chart2.json' target='_blank'>chart2.json</a>,<a href='/TS-UI/lib/modules/chart/chartNote.json' target='_blank'>chartNote.json</a>
+</p>
+<p>更多细节请查看 Demo。</p>
