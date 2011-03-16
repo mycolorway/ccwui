@@ -184,10 +184,16 @@ p.desc {
 	overflow:auto;
 }
 
-	.entry .log p{
-		border-bottom:1px dashed #ccc;
-		margin-bottom:10px;
-	}
+.entry .log ul {
+	border-bottom: 1px dashed #ccc;
+	margin-bottom: 10px;
+	padding: 0 0 0 20px;
+	list-style: disc outside none;
+}
+
+.entry .log ul li {
+	line-height: 2;
+}
 
 .entry p {
     padding: 0 0 10px 0;
