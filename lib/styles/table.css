@@ -121,13 +121,13 @@
 .grid th.sort-asc .th-inner {
     padding-right: 20px;
     margin-right: 5px;
-    background: url(../images/icon-sort-asc.png) no-repeat 100% 7px;
+    background: url(../images/icon/icon-sort-asc.png) no-repeat 100% 7px;
 }
 
 .grid th.sort-desc .th-inner {
     padding-right: 20px;
     margin-right: 5px;
-    background: url(../images/icon-sort-desc.png) no-repeat 100% 7px;
+    background: url(../images/icon/icon-sort-desc.png) no-repeat 100% 7px;
 }
 
 .grid .link-col-menu {

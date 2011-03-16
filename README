@@ -1,26 +1,4 @@
-彩程 UI 团队 jQuery UI 插件集合。
-jQuery vesion:1.4.4
-jQuery UI version:1.8.6
-=========================================
-目录结构说明
-/+images/    	  \\容器图片文件夹
-
-/~lib/			
-/ /+images/ 	  \\UI 插件图片
-/ /+modules/ 	  \\UI 插件 demo 列表
-/ /+scripts/	  \\UI 插件脚本
-/ /+styles/ 	  \\UI 插件样式
-
-/+scripts/ 	      \\容器脚本文件夹
-/+styles/  	   	  \\容器样式文件夹
-/home.html 	 	  \\容器首页
-/index.html		  \\容器索引页
-/nav.html  		  \\容器导航
-/print.html		  \\容器打印页
-=========================================
-
-
-
-彩程设计: http://mycolorway.com
-Blog: http://blog.mycolorway.com
-Twitter: @mycolorway
+2011-03-16:
+* grid组件增加翻页排序的功能，整理的示例和文档
+* 新增图片延迟加载组件：lazimg
+* 新增轻量级的弹出层组件：lightbox

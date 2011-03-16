@@ -1,8 +1,5 @@
 <h3>说明文档</h3>
 <p>
-基本 jQuery UI 开发的表格组件。grid-1 ~ grid-7 是采用本组件制作的若干 demo。
-</p>
-<p>
 <strong>使用方法与参数说明：</strong>
 <pre class="brush:js">
 $( "selector" ).grid({
@@ -27,20 +24,20 @@ $( "selector" ).grid({
     sortType: "number", 	//排序的数据类型，目前支持string、date和number，默认自动判断
     sortFunc: [function], 	//自定义的排序函数，会覆盖sortType属性，排序函数的写法参考源码中的$.fn.grid.sortFunc
     colMenu: false 			//是否显示控制列隐藏的菜单
-	});
+});
 </pre>
 </p>
 <p>
 <strong>表格列配置对象的参数说明：</strong>
 <pre class="brush:js">
-	{
+{
     width: 0, 			//列的宽度
     align: "left", 		//文本的水平位置
     dataIndex: "", 		//对应的数据字段名
     header: "", 		//列表头的文本
     headerAlign: "", 	//列表头文本的位置，默认与header的值相同
     renderer: null 		//自定义单元格的渲染方式，接受一个function(val, rowIndex, colIndex, row, config)，返回HTML字符串/HTML元素/jQuery对象/数组
-	}
+}
 </pre>
 </p>
 <p>
@@ -52,6 +49,6 @@ $( "selector" ).grid({
     rowdblclick(e, rowObj): //数据行被双击时触发，参数rowObj包含2个属性index(int), data(object)
     sort(e, sortObj): 		//排序之后之后触发，参数sortObj包含3个属性status(string), th(object), config(object)
 </pre>
-Grid的数据格式请参考：<a href='/uiku/lib/modules/grid/data.json' target='_blank'>data.json</a>,<a href='/uiku/lib/modules/grid/data.json' target='_blank'>tree.json</a>
+Grid的数据格式请参考：<a href='lib/modules/grid/data.json' target='_blank'>data.json</a>,<a href='lib/modules/grid/data.json' target='_blank'>tree.json</a>
 </p>
 <p>更多细节请查看 Demo 及源代码。</p>

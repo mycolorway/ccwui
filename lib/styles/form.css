@@ -45,7 +45,7 @@
 }
 
 .form .form-field .field-input {
-    margin: 0 0 0 105px;
+    float: left;
 }
 
 .form .form-field .field-input input.input-text {
