@@ -30,12 +30,10 @@
                 msg: "两次输入的密码不一致"		//自定义错误提示信息
             },
             "radio-status": {		
-                required: true,					//单选按钮验证
-                position: "top"					//错误信息显示位置，默认 right。只有引入jquery.tips.js有效。
+                required: true					//单选按钮验证
             },
             "cb-group": {		
-                required: true,					//多选按钮验证
-                position: "top"
+                required: true					//多选按钮验证
             }
         },
         error: function( e, field ) {
@@ -62,7 +60,14 @@
 <strong>表单验证API:</strong>
 <pre class="brush:js">
 	$( ".form" ).validate( "validate" );	//传递字符串 "validate" 验证所有字段是否满足上面验证条件
-	$( ".form" ).validate( "reset" )		//传递字符串 "reset" 清除所有错误信息提示
+	$( "#txt-required," +
+		"#txt-max-length," +
+		"#txt-digits-max," +
+		"#txt-email," +
+		"#txt-url," +
+		"#txt-password," +
+		"#txt-confirm-password," +
+		".field-input" ).tips( "hide" );		//使用$( SELECTOR ).tips( "hide" )方法清除错误信息提示
 </pre>
 </p>
 <p>更多细节请查看 Demo 及源代码。</p>
